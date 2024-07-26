@@ -56,7 +56,14 @@ const App = () => {
         add
       </button>
       {allTodos.map((todo, index) => {
-        return <p key={index}>{todo}</p>
+        console.log
+        return (
+          <div key={index}>
+            <br />
+            <span>{todo}</span>
+            <button>completed</button>
+          </div>
+        )
       })}
     </>
   )
